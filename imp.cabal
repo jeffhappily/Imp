@@ -1,0 +1,39 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: aaf49df9c9b5e889685da7b62c50d2edc2a717b42fb21ac13905003326efa5a6
+
+name:           imp
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/jeffhappily/imp#readme>
+homepage:       https://github.com/jeffhappily/imp#readme
+bug-reports:    https://github.com/jeffhappily/imp/issues
+author:         Jer Fei Cheah
+maintainer:     goodboy96@live.com.my
+copyright:      2020 Jer Fei Cheah
+license:        BSD3
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/jeffhappily/imp
+
+library
+  exposed-modules:
+      Eval
+      Expr
+      Main
+  other-modules:
+      Paths_imp
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , containers
+    , http-conduit
+    , text
+  default-language: Haskell2010
